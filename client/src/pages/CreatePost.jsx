@@ -22,7 +22,7 @@ const CreatePost = () => {
         setLoading(true);
 
         const response = await fetch(
-          'http://localhost:8080/api/v1/post',
+          'https://image-generation-openai-mb4m.onrender.com/api/v1/post',
           {
             method: 'POST',
             headers: {
@@ -58,7 +58,7 @@ const CreatePost = () => {
       try {
         setGeneratingImg(true);
         const response = await fetch(
-          'http://localhost:8080/api/v1/dalle',
+          'https://image-generation-openai-mb4m.onrender.com/api/v1/dalle',
           {
             method: 'POST',
             headers: {
